@@ -67,7 +67,7 @@ Consider a graph G = (V,E,W);
 T: a tree consisting of only the starting vertex v;
 while (T has fewer than |V| vertices)
 {
-    e  find a smallest edge connecting T to G\T;
+    e <<< find a smallest edge connecting T to G\T;
     add e to T;
 }
 ```
@@ -90,11 +90,11 @@ While there are unknown vertices in G
     Select the unknown vertex v with lowest cost
     Mark v as known and add the edge (v, v.prev) to output
     For each edge (v,u) with weight w,
-	    if(w < u.cost)
+	if(w < u.cost)
         {
-		    u.cost = w;
-	        u.prev = v;
-	    }
+	     u.cost = w;
+	     u.prev = v;
+	}
 
 ```
 
